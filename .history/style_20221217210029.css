@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+:root {
+    --BG-COLOR: #fff;
+    --BG-COLOR2: #000000;
+    --BG-COLOR3: #4d08d8;
+    --FONT-COLOR: #000;
+    --FONT-COLOR2: #FFF;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--FONT-COLOR);
+    background-color: var(--BG-COLOR3);
+    
+}
+
+.container {
+    background-color: var(--BG-COLOR);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 25px;
+    box-shadow: 1px 4px 5px 1px rgba(5, 5, 5, 0.35);
+    -webkit-box-shadow: 1px 4px 5px 1px rgba(9, 9, 9, 0.35);
+
+}
+
+
+/* FONT */
+h2 {
+   font-size: 1.3rem; 
+   font-family: inherit;
+}
+
+
+
+
+/* FLEX */
+.title,
+label,
+.password_length,
+.cta,
+.strength {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* CLEAR BUTTON */
+.fa-rectangle-xmark {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+
+/* DISPLAY PASSWORD */
+
+.display_password {
+    padding: 1.2rem 1.1rem 1.2rem 1.4rem;
+    width: 300px;
+    border-radius: 10px;
+    background: var(--BG-COLOR2);
+    color: var(--FONT-COLOR2);
+    overflow: hidden; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.hide i{
+    font-size: 1.1rem;
+    color: rgb(255, 240, 79);
+}
+
+.fa-eye-slash {
+    display: none;
+    transition: 0.15s ease;
+}
+
+
+.result {
+    font-size: 1rem;
+    padding-left: .8rem;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+
+/* Strength */
+.strength {
+    width: 100%;
+}
+
+.strength span {
+    width: 31%;
+    height: 5px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.strength .weak {
+    background-color: red;
+}
+
+
+
+
+/* PASSWORD LENGTH */
+.password_length {
+    margin-bottom: 1rem;
+}
+
+
+.password_length label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.password_length input[type="number"] {
+    width: 55px;
+    padding: .4rem .4rem .3rem .4rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--FONT-COLOR);
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    color: var(--FONT-COLOR);
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.password_length input[type="number"]:focus {
+    outline: none;
+    background-color: #f0f0f0;
+    transition: background-color 0.15s ease;
+}
+
+
+
+/* LIST ATTRIBUTES */
+.list {
+    margin-top: .5rem;  
+}
+
+.list input[type="checkbox"] {
+    padding: 1rem;
+}
+
+/* Hide the checkbox */
+.list input {
+    opacity: 0;
+    cursor: pointer;
+    margin: .5rem;
+}
+
+label {
+     position: relative;
+}
+
+.list .fa-solid {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    color: var(--BG-COLOR2);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.fa-circle-check{
+    opacity: 0;
+}
+
+/* CHECKED */
+.list input:checked ~ .fa-circle-check {
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+
+.list input:checked ~ .fa-circle {
+    opacity: 0;
+     transition: opacity .2s ease;
+}
+
+
+/* BUTTON */
+.btn {
+    margin-top: .5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.generate {
+    background-color: var(--BG-COLOR2);
+    color: var(--FONT-COLOR2);
+}
+
+.generate:hover i{
+    transform: rotate(180deg);
+    transition: transform .4s ease;
+}
+
+.generate:focus {
+    background-color: #38079c;
+    outline: none;
+}
+
+.copy:focus {
+    outline: none;
+}
+
+.btn .fa-solid {
+    margin-right: 6px;
+}

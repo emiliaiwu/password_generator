@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fd9c36575f.js" crossorigin="anonymous"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Password Generator</h2>
+            <i class="fa-solid fa-rectangle-xmark"></i>
+        </div>
+        
+        <div class="display_password">
+            <p>Showpasswordhereanywaysmahhh</p>
+        </div>
+
+        <div class="password_attributes">
+            <div class="password_length">
+                <h3>Password Length</h3>
+                <input type="text">
+            </div>
+    
+            <div class="password_includes">
+                <ul>
+                    <li class="list">
+                        <label for="uppercase" id="uppercase_letters">Include uppercase letters
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <input type="checkbox" name="uppercase" id="uppercase" class="uppercase">
+                        </label>       
+                    </li>
+                    <li class="list">
+                        <label for="lowercase" id="lowercase_letters">Include lowercase letters
+                            
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                            
+                        </label>
+                        
+                    </li>
+                    <li class="list">
+                        <label for="numbers" id="include_numbers">Include numbers</label>
+                        <input type="checkbox" name="numbers" id="numbers" class="numbers">   
+                    </li>
+                    <li class="list">
+                        <label for="symbols" id="include_symbols">Include Symbols</label>
+                        <input type="checkbox" name="symbols" id="symbols" class="symbols">   
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <button class="btn generate"><i class="fa-solid fa-gear"></i>Generate</button>
+            <button class="btn copy">Copy<i class="fa-solid fa-clone"></i></button>
+        </div>
+    </div> 
+</body>
+</html>

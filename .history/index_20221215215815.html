@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fd9c36575f.js" crossorigin="anonymous"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Password Generator</h2>
+            <i class="fa-solid fa-rectangle-xmark clear"></i>
+        </div>
+        
+        <div class="display_password">
+            <span class="result">Showpasswordhereanywaysma</span>
+            <span class="hide">
+                <i class="fa-solid fa-eye hidebtn fa-eye-slash"></i>
+                <!-- <i class="fa-solid fa-eye-slash"></i> -->
+            </span>
+        </div>
+        <div class="strength">
+            <span class="weak"></span>
+            <span class="medium"></span>
+            <span class="strong"></span>
+        </div>
+
+        <div class="password_attributes">
+            <div class="password_length">
+                <label>Password Length</label>
+                <input type="number" id="length" min="1" m value="20">
+            </div>
+            <div class="password_includes">
+                <ul>
+                    <li class="list">
+                        <label for="uppercase" id="uppercase_letters">Include uppercase letters
+                            <input type="checkbox" name="uppercase" id="uppercase" class="uppercase" checked>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle-check"></i>  
+                        </label>       
+                    </li>
+                    <li class="list">
+                        <label for="lowercase" id="lowercase_letters">Include lowercase letters
+                            <input type="checkbox" name="lowercase" id="lowercase" class="lowercase" checked>   
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </label>  
+                    </li>
+                    <li class="list">
+                        <label for="numbers" id="include_numbers">Include numbers
+                            <input type="checkbox" name="numbers" id="numbers" class="numbers" checked>   
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle-check"></i>    
+                        </label>
+                        
+                    </li>
+                    <li class="list">
+                        <label for="symbols" id="include_symbols">Include symbols
+                             <input type="checkbox" name="symbols" id="symbols" class="symbols" checked>   
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle-check"></i> 
+                        </label>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <button class="btn generate"><i class="fa-solid fa-gear"></i>Generate</button>
+            <button class="btn copy"><i class="fa-solid fa-copy"></i>Copy</button>
+        </div>
+    </div> 
+<script src="script.js"></script>
+</body>
+</html>

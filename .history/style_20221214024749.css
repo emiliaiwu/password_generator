@@ -1,0 +1,39 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+:root {
+    --BG-COLOR: #000c3d;
+    --BG-COLOR2:
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;;
+}
+
+.container {
+    background-color: var(--BG-COLOR);
+
+}
+
+
+.display_password {
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    background: 
+    box-shadow: inset 9px 9px 18px #001428,
+            inset -9px -9px 18px #002a56;
+}

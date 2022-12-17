@@ -52,22 +52,23 @@ const inputLimit = () => {
 };
 
 
-// COPY FUNCTIONALITY
+// Add EventListener to Generate Button
+generateBtn.addEventListener('click', () => {
+	inputLimit();
+	const length = +lengthEl.value;
+	const hasUppercase = uppercaseEl.checked;
+	const hasLowercase = lowercaseEl.checked;
+	const hasNumbers = numbersEl.checked;
+	const hasSymbols = symbolsEl.checked;
 
-copyBtn.addEventListener('click', () => {
-	const textarea = document.createElement('textarea');
-	const password = resultEl.innerText;
-
-	if (!password) return;
-
-	textarea.value = password;
-	document.body.appendChild(textarea);
-	textarea.select();
-	document.execCommand('copy');
-	textarea.remove();
-	alert('The password is copied to clipboard');
-
+	resultEl.textContent = generatePassword(length, hasUppercase,
+		hasLowercase, hasNumbers, hasSymbols);
+	
+	
 });
+
+
+
 
 
 // TRAVERSY MEDIA
@@ -166,6 +167,18 @@ const passwordGenerator1 = () => {
 			})
 		}
 		
+
+		// let password = '';
+		// let password2 = '';
+		// for (let i = 0; i < length; i++) {
+		// 	let oldPassword = generatedPassword.split('');
+		// 	password = oldPassword[Math.floor(Math.random() * oldPassword.length)];
+		// 	password2 += password;
+		// 	oldPassword = oldPassword.splice(password, 1);
+				
+		// 	console.log(oldPassword);
+		// }
+
 		const password = generatedPassword.slice(0, length);
 		return password;
 		

@@ -67,7 +67,7 @@ copyBtn.addEventListener('click', () => {
 	textarea.remove();
 	alert('The password is copied to clipboard');
 
-});
+})
 
 
 // TRAVERSY MEDIA

@@ -52,6 +52,8 @@ const inputLimit = () => {
 };
 
 
+
+
 // COPY FUNCTIONALITY
 
 copyBtn.addEventListener('click', () => {

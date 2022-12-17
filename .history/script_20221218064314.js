@@ -63,11 +63,12 @@ copyBtn.addEventListener('click', () => {
 	textarea.value = password;
 	document.body.appendChild(textarea);
 	textarea.select();
+
 	document.execCommand('copy');
 	textarea.remove();
-	alert('The password is copied to clipboard');
+	alert('The password is copied to clipboard')
 
-});
+})
 
 
 // TRAVERSY MEDIA

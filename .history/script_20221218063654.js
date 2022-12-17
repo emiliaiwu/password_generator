@@ -54,20 +54,7 @@ const inputLimit = () => {
 
 // COPY FUNCTIONALITY
 
-copyBtn.addEventListener('click', () => {
-	const textarea = document.createElement('textarea');
-	const password = resultEl.innerText;
-
-	if (!password) return;
-
-	textarea.value = password;
-	document.body.appendChild(textarea);
-	textarea.select();
-	document.execCommand('copy');
-	textarea.remove();
-	alert('The password is copied to clipboard');
-
-});
+copyBtn.addEventListener('click', )
 
 
 // TRAVERSY MEDIA
